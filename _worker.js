@@ -4328,6 +4328,7 @@ var worker_default = {
               }
             });
           default:
+            return new Response('404 Not found', { status: 404 });
             url.hostname = "www.speedtest.net";
             url.protocol = "https:";
             request = new Request(url, request);
